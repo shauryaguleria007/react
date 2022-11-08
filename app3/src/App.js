@@ -1,7 +1,16 @@
-import './App.css';
-
+import Review from "./review";
 function App() {
-  return <h1>app3</h1>
+  return (
+    <main>
+      <section className="container">
+        <div className="title">
+          <h1>our reviews</h1>
+          <div className="underline"></div>
+        </div>
+        <Review />
+      </section>
+    </main>
+  );
 }
 
 export default App;
