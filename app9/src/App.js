@@ -32,20 +32,26 @@ function App() {
           <button className="btn">submit</button>
         </form>
       </section>
-      <section className="colors">
-        {list.map((singleColor, index) => {
-          return (
-            <SingleColor
-              key={index}
-              {...singleColor}
-              index={index}
-              hexColor={`#${singleColor.hex}`}
-            />
-          );
-        })}
-      </section>
+      {error ? <h3>color not valid</h3> : <ColorSection list={list} />}
     </>
   );
 }
+
+const ColorSection = ({ list }) => {
+  return (
+    <section className="colors">
+      {list.map((singleColor, index) => {
+        return (
+          <SingleColor
+            key={index}
+            {...singleColor}
+            index={index}
+            hexColor={`#${singleColor.hex}`}
+          />
+        );
+      })}
+    </section>
+  );
+};
 
 export default App;
