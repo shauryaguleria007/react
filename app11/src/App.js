@@ -1,6 +1,10 @@
-
+import Navbar from "./navbar";
 function App() {
-  return <h3>app11</h3>
+  return (
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
 
 export default App;
