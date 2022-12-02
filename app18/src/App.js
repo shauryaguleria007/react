@@ -1,11 +1,11 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { useGlobalContext } from './context'
 
-import Home from './Home'
-import Movie from './SingleMovie'
-
+import SetupForm from './SetupForm'
+import Loading from './Loading'
+import Modal from './Modal'
 function App() {
-  return <h2>movie DB starter</h2>
+  return <h2>quiz starter</h2>
 }
 
 export default App

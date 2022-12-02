@@ -1,6 +1,16 @@
+import axios from 'axios'
 import React, { useState, useContext, useEffect } from 'react'
-// make sure to use https
-export const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`
+
+const table = {
+  sports: 21,
+  history: 23,
+  politics: 24,
+}
+
+const API_ENDPOINT = 'https://opentdb.com/api.php?'
+
+const url = ''
+
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
